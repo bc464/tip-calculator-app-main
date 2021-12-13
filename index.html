@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header class="logo-header">
+    <img  class="logo" src="images/logo.svg" alt="logo">
+</header>
+<main>
+
+  <div class="container">
+<!-- BOX1 -->
+    <div class="box1">
+      <div class="bill-section">
+        <p class="box1-headings" >Bill</p>
+        <img class="dollar-icon" src="images/icon-dollar.svg" alt="dollar icon">
+        <input id="bill" class="bill-input" type="text"  name="" placeholder="0" required >
+      </div>
+      <div class="tip-select-section">
+        <p class="box1-headings">Select Tip %</p>
+        <div class="tip-select-btns" >
+        <button id="percent-5" class="btn-tip" value="5">5%</button>
+        <button id="percent-10"  class="btn-tip" value="10">10%</button>
+        <button id="percent-15" class="btn-tip" value="15">15%</button>
+        <button id="percent-25" class="btn-tip" value="25">25%</button>
+        <button id="percent-50" class="btn-tip" value="50">50%</button>
+        <input id="input-custom" type="text" name="" placeholder="Custom">
+      </div>
+      </div>
+      <div class="number-people-section">
+        <p class="box1-headings">Number of People</p>
+        <span id="error-msg" class="error-msg">Can't be zero</span>
+        <img class="people-icon"  src="images/icon-person.svg" alt="people icon">
+        <input id="input-number-people" class="number-people" type="text" name="" placeholder="0">
+      </div>
+
+
+    </div class="box1">
+
+<!-- BOX2 -->
+    <div role="contentinfo" class="box2">
+      <div class="tip-amount-section">
+        <div class="amount">
+        <div class="tip-amount-text">
+          <p>Tip Amount</p>
+          <p class="per-person">/ person</p>
+        </div>
+        <div class="tip-amount-total">
+          <p id="tip-amount-total">$0.00</p>
+        </div>
+      </div>
+      </div>
+
+      <div  class="total-section">
+        <div class="amount">
+        <div class="total-amount-text">
+          <p>Total</p>
+          <p class="per-person">/ person</p>
+        </div>
+        <div class="total-amount-total">
+          <p id="total-amount-total">$0.00</p>
+        </div>
+      </div>
+      
+      <div class="reset-section">
+        <button id="reset" class="btn-reset">Reset</button>
+      </div>
+    </div class="box2">
+  </div class="container">
+</main>
+
+ <div role="contentinfo" class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">brian</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
